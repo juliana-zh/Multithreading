@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Waiting_for_finishing_a_thr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RAII_for_waiting_finishing_a_thread", "RAII_for_waiting_finishing_a_thread\RAII_for_waiting_finishing_a_thread.vcxproj", "{9514193F-67A4-477B-8101-E6B6B7A9CD46}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Detach_thread_for_doc_edition", "Detach_thread_for_doc_edition\Detach_thread_for_doc_edition.vcxproj", "{369315A3-711B-4218-9E9F-1F09EDB8A3FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{9514193F-67A4-477B-8101-E6B6B7A9CD46}.Release|x64.Build.0 = Release|x64
 		{9514193F-67A4-477B-8101-E6B6B7A9CD46}.Release|x86.ActiveCfg = Release|Win32
 		{9514193F-67A4-477B-8101-E6B6B7A9CD46}.Release|x86.Build.0 = Release|Win32
+		{369315A3-711B-4218-9E9F-1F09EDB8A3FE}.Debug|x64.ActiveCfg = Debug|x64
+		{369315A3-711B-4218-9E9F-1F09EDB8A3FE}.Debug|x64.Build.0 = Debug|x64
+		{369315A3-711B-4218-9E9F-1F09EDB8A3FE}.Debug|x86.ActiveCfg = Debug|Win32
+		{369315A3-711B-4218-9E9F-1F09EDB8A3FE}.Debug|x86.Build.0 = Debug|Win32
+		{369315A3-711B-4218-9E9F-1F09EDB8A3FE}.Release|x64.ActiveCfg = Release|x64
+		{369315A3-711B-4218-9E9F-1F09EDB8A3FE}.Release|x64.Build.0 = Release|x64
+		{369315A3-711B-4218-9E9F-1F09EDB8A3FE}.Release|x86.ActiveCfg = Release|Win32
+		{369315A3-711B-4218-9E9F-1F09EDB8A3FE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
