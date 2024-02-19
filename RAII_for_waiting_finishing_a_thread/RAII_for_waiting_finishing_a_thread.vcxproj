@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{096ddeef-2db1-465d-81d2-623a0915d0ba}</ProjectGuid>
-    <RootNamespace>MultithreadingCplusplus</RootNamespace>
+    <ProjectGuid>{9514193f-67a4-477b-8101-e6b6b7a9cd46}</ProjectGuid>
+    <RootNamespace>RAIIforwaitingfinishingathread</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Simple_program</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="simple_program.cpp" />
+    <ClCompile Include="..\Multithreading_Cplusplus\RAII_for_waiting_finishing_a_thread.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

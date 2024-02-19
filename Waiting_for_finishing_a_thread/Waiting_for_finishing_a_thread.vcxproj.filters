@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="simple_program.cpp">
+    <ClCompile Include="..\Multithreading_Cplusplus\waiting_for_finishing_a_thread.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

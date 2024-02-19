@@ -1,9 +1,23 @@
 #include <thread>
 #include <iostream>
-#include <random>
 
-unsigned calculate_fib(unsigned n);
-void action_in_current_thread();
+void do_action_in_current_thread();
+unsigned calculate_fib(unsigned);
+
+class thread_guard {
+	std::thread& t;
+public:
+	explicit thread_guard(std::thread& t_) :
+		t(t_)
+	{}
+	~thread_guard() {
+		if (t.joinable()) {
+			t.join();
+		}
+	}
+	thread_guard(thread_guard const&) = delete;
+	thread_guard& operator=(thread_guard const&) = delete;
+};
 
 struct func {
 	int& i;
@@ -20,15 +34,13 @@ void f() {
 	int some_local_state = 0;
 	func my_func(some_local_state);
 	std::thread t(my_func);
+	thread_guard g(t);
+	do_action_in_current_thread();
+}
 
-	try {
-		action_in_current_thread();
-	}
-	catch (...) {
-		t.join();
-		throw;
-	}
-	t.join();
+void do_action_in_current_thread() {
+	std::cout << "Start action" << std::endl;
+	//throw std::exception("exception");
 }
 
 unsigned calculate_fib(unsigned n) {
@@ -51,18 +63,7 @@ unsigned calculate_fib(unsigned n) {
 	return prev;
 }
 
-void action_in_current_thread() {	
-	throw std::exception("Exception");
-}
-
-int main(int argc, char **argv) {
-	std::cout << "123" << std::endl;
-	try {
-		f();
-	}
-	catch (...) {
-		std::cerr << "An exception has been caught" << std::endl;
-	}
-
+int main(int argc, char** argv) {
+	f();
 	return 0;
 }
