@@ -18,5 +18,8 @@
     <ClCompile Include="simple_program.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="waiting_for_finishing_a_thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
